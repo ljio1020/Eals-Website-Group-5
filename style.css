@@ -3,5 +3,12 @@ body {
 }
 
 hr {
-    color: #000;
+    border-color: black;
+    margin-top: 5%;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90px;
+    text-align: center;
 }
