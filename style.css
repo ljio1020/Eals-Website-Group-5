@@ -1,14 +1,24 @@
-body {
-    background-color: #827B60;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-hr {
-    border-color: black;
-    margin-top: 5%;
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #483C32, #045D5D, #463E3F, #614051 );
+    animation: color ease-in-out infinite;
 }
 
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 90px;
-    text-align: center;
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
