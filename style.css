@@ -32,6 +32,8 @@ body {
 }
 
 .container {
+    display: flex;
+    flex: 1;
     height: 100vh;
     width: 100%;
     background: linear-gradient(45deg, #483C32, #045D5D, #463E3F, #614051 );
@@ -40,6 +42,8 @@ body {
 }
 
 #ttl {
+    display: flex;
+    flex: 1;
     position: absolute;
     top: 20%;
     left: 0%;
@@ -47,6 +51,8 @@ body {
 }
 
 #ttl2 {
+    display: flex;
+    flex: 1;
     position: absolute;
     top: 35%;
     left: 0%;
@@ -54,6 +60,8 @@ body {
 }
 
 #ttl3 {
+    display: flex;
+    flex: 1;
     position: absolute;
     top: 50%;
     left: 0%;
