@@ -43,7 +43,7 @@ h1::before {
     -webkit-text-stroke: 0vw #0d4242;
     border-right: 2px solid #9a6581;
     overflow: hidden;
-    animation: animate 6s linear infinite;
+    animation: animate 4s linear infinite;
 }
 
 @keyframes transitionIn {

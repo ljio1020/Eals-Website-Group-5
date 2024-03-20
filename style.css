@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 hr {
@@ -41,6 +42,7 @@ body {
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
 }
+
 
 #ttl {
     display: flex;
@@ -102,7 +104,6 @@ a {
         transform: rotate(0);
     }
 }
-
 
 @keyframes color{
     0%{
