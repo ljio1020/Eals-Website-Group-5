@@ -29,6 +29,7 @@ hr {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
+    animation: transitionIn 1s;
 }
 
 .container {
@@ -39,7 +40,6 @@ body {
     background: linear-gradient(45deg, #483C32, #045D5D, #463E3F, #614051 );
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
-    animation: transitionIn 1s;
 }
 
 #ttl {
