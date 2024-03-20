@@ -39,13 +39,14 @@ body {
     background: linear-gradient(45deg, #483C32, #045D5D, #463E3F, #614051 );
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
+    animation: transitionIn 1s;
 }
 
 #ttl {
     display: flex;
     flex: 1;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 0%;
     font-size: 80px;
 }
@@ -54,7 +55,7 @@ body {
     display: flex;
     flex: 1;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 0%;
     font-size: 80px;
 }
@@ -63,7 +64,7 @@ body {
     display: flex;
     flex: 1;
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 0%;
     font-size: 80px;
 }
@@ -89,6 +90,19 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
 
 @keyframes color{
     0%{
