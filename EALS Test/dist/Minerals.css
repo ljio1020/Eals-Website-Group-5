@@ -1,0 +1,381 @@
+html{
+	height:100%;
+	width:100%;
+	color:black;
+}
+body{
+	font-style: normal;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	overflow-y: scroll; /* Add vertical scrol*/
+	margin:0px;
+	width:100%;
+	height:100%;
+}
+div{
+	font-style:normal;
+}
+
+.navbar-logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 2%;
+    left: 15%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 20%; /* This will make the logo circular */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.sidenav:hover .navbar-logo {
+    opacity: 1;
+}
+
+.sidenav{
+	position:fixed;
+	display:flex;
+	flex-flow:column;
+	width:5%;
+	min-height:328px;	
+	height:100%;
+    background: linear-gradient(to bottom, #6D678E, #F6B5CC); 
+	-webkit-transition: width 1s;
+	z-index:1;
+	float:left;
+	overflow:hidden;
+    margin-top: -50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.sidenav:hover{
+	width: 20%;
+}
+.sidenav:hover div{
+	visibility:visible;
+}
+.sidenav:hover ~.nav{
+	width:80%;
+}
+.sidenavClick{
+	width:20%;
+	visibility:visible;
+}
+
+
+.side-conts ul{
+	margin:0px;
+	padding:0px;
+	overflow:visible;
+}
+.side-conts ul li{
+	float:left;
+	text-align:left;
+	width:100%;
+}
+.side-conts ul li a{
+	padding:10px 5px;
+	text-decoration:none;
+	display:block;
+	color:white;
+}
+.side-conts ul li a:hover {
+  background-color: #111;
+}
+.dropdown{
+	padding:10px 5px;
+	width:100%;
+}
+#dropdown-conts{
+		display:none;
+		position:absolute;
+		background-color:white;
+		box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index:2;
+}
+.dropdown ul li a{
+	color:black;
+}
+.dropdown:hover{
+	background-color: #111;
+}
+.dropdown ul li a:hover{
+	background-color:orange;
+}
+.dropdown:hover #dropdown-conts{
+	display:block;
+}
+.side-conts{
+	position:absolute;
+	width:100%;
+	top:30%;
+	visibility:hidden;
+	color:white;
+}
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(GWAGANDA.png); /* Update the image URL */
+    background-color: red; /* This color will not be visible */
+    opacity: 0;
+    visibility: hidden;
+    top: 50%; /* Place the image in the middle vertically */
+    left: 50%; /* Place the image in the middle horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    padding-top: 20px;
+}
+.sidemenuClick{
+	visibility:visible;
+}
+
+* {box-sizing:border-box;margin:0px;}
+
+@media screen and (max-width: 800px) {
+	.logo{width:50px; height:50px;}
+	/*.nav{display:none;}*/
+}
+@media screen and (max-height:328px){
+	.sidenav{
+		position:relative;
+	}
+}
+
+.side-conts {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    color: white;
+    opacity: 0; /* Initially set opacity to 0 */
+    visibility: hidden; /* Initially hide the contents */
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s; /* Apply transitions */
+}
+
+.sidenav:hover .side-conts {
+    visibility: visible; /* Show the contents when hovering over the navbar */
+    opacity: 1; /* Fade in the contents when hovering over the navbar */
+    transition-delay: 0s; /* Delay the opacity transition */
+}
+
+.sidenav:hover .logo {
+    visibility: visible; /* Show the red box when hovering over the navbar */
+    opacity: 1; /* Fade in the red box when hovering over the navbar */
+    transition-delay: 0s; /* Delay the opacity transition */
+}
+
+
+
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: fadeInFromBottom 1.5s ease-in-out;
+}
+
+h1 {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+
+.li1 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.li2 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.li3 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.li4 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.li5 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow with horizontal offset, vertical offset, blur radius, and color */
+}
+
+table {
+    width: 1300px;
+    height: 600px; 
+    border: 0px solid black;
+    margin-left: 100px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 0px solid black;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.td1, .td2, .td3, .td4 {
+    height: 200px;
+}
+
+.td1 {
+    background-image: url(Quartz.png);
+    background-size: 100px;
+    animation: spin 60s linear infinite;
+
+}
+
+.td2 {
+    background-image: url(Gold.png);
+    background-size: 100px;
+    animation: spin 60s linear infinite;
+
+}
+
+.td3 {
+    background-image: url(Diamond.png);
+    background-size: 100px;
+    animation: spin 60s linear infinite;
+
+}
+
+.td4 {
+    background-image: url(Emerald.png);
+    background-size: 100px;
+    animation: spin 60s linear infinite;
+
+}
+
+.td5, .td6, .td7, .td8 {
+    vertical-align: top;
+    padding: 20px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5)
+}
+
+.td5 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+    height: auto;
+}
+
+.p1td5 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p2td5 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+}
+
+.td6 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+
+}
+
+.p1td6 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p2td6 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+}
+
+.td7 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+
+}
+
+.p1td7 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p2td7 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+}
+
+.td8 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+
+}
+
+.p1td8 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p2td8 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
