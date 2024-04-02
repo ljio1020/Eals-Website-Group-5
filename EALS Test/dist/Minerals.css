@@ -243,30 +243,62 @@ td {
 .td1 {
     background-image: url(Quartz.png);
     background-size: 100px;
-    animation: spin 60s linear infinite;
+    margin: 0 auto;
+    padding: 50px;
+    height: 200px;
+    width: 200px;
+    transition: transform .2s; /* Animation */
 
 }
+
+.td1:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 .td2 {
     background-image: url(Gold.png);
     background-size: 100px;
-    animation: spin 60s linear infinite;
+    margin: 0 auto;
+    padding: 50px;
+    height: 200px;
+    width: 200px;
+    transition: transform .2s;
 
 }
+
+.td2:hover {
+    transform: scale(1.5);
+}
+
 
 .td3 {
     background-image: url(Diamond.png);
     background-size: 100px;
-    animation: spin 60s linear infinite;
+    margin: 0 auto;
+    padding: 50px;
+    height: 200px;
+    width: 200px;
+    transition: transform .2s;
+}
 
+.td3:hover {
+    transform: scale(1.5);
 }
 
 .td4 {
     background-image: url(Emerald.png);
     background-size: 100px;
-    animation: spin 60s linear infinite;
-
+    margin: 0 auto;
+    padding: 50px;
+    height: 200px;
+    width: 200px;
+    transition: transform .2s;
 }
+
+.td4:hover {
+    transform: scale(1.5);
+}
+
 
 .td5, .td6, .td7, .td8 {
     vertical-align: top;
@@ -365,6 +397,7 @@ td {
     text-align: center;
     font-size: 13px;
 }
+
 
 
 
