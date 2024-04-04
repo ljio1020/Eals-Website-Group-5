@@ -185,6 +185,20 @@ h1 {
     text-align: center;
     margin-top: 50px;
     margin-left: 100px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.Headers {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 
@@ -220,7 +234,7 @@ h1 {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow with horizontal offset, vertical offset, blur radius, and color */
 }
 
-table {
+.Table1 {
     width: 1300px;
     height: 600px; 
     border: 0px solid black;
@@ -398,8 +412,102 @@ td {
     font-size: 13px;
 }
 
+.A1, .A3, .A5, .A7, .A9 {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 100px;
+
+}
+
+.A2, .A4, .A6, .A8, .A10 {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 100px;
+
+}
 
 
+
+
+
+
+.CTable { 
+    border: 0px solid black;
+    text-align: center
+    border-collapse: collapse;
+    margin-left: 197px;
+    width: 80%;
+
+}
+
+.CTable td,
+.CTable th {
+    text-align: center;
+    height: 70px;
+}
+
+.CT1 {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.CT2 {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+
+}
+
+.B1 {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.B3, .B5, .B7, .B9 {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+
+
+
+.A1, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.Headers {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.CTable {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
 
 
 
