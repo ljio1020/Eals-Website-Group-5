@@ -1,0 +1,446 @@
+html{
+	height:100%;
+	width:100%;
+	color:black;
+}
+body{
+	font-style: normal;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	overflow-y: scroll; /* Add vertical scrol*/
+	margin:0px;
+	width:100%;
+	height:100%;
+    animation: fadeInFromBottom 1.5s ease-in-out;
+}
+
+div{
+	font-style:normal;
+}
+
+.navbar-logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 2%;
+    left: 15%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 20%; /* This will make the logo circular */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.sidenav:hover .navbar-logo {
+    opacity: 1;
+}
+
+.sidenav{
+	position:fixed;
+    margin-top: -50px;
+	display:flex;
+	flex-flow:column;
+	width:5%;
+	min-height:328px;	
+	height:100%;
+    background: linear-gradient(to bottom, #6D678E, #F6B5CC); 
+	-webkit-transition: width 1s;
+	z-index:1;
+	float:left;
+	overflow:hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.sidenav:hover{
+	width: 20%;
+}
+.sidenav:hover div{
+	visibility:visible;
+}
+.sidenav:hover ~.nav{
+	width:80%;
+}
+.sidenavClick{
+	width:20%;
+	visibility:visible;
+}
+
+
+.side-conts ul{
+	margin:0px;
+	padding:0px;
+	overflow:visible;
+}
+.side-conts ul li{
+	float:left;
+	text-align:left;
+	width:100%;
+}
+.side-conts ul li a{
+	padding:10px 5px;
+	text-decoration:none;
+	display:block;
+	color:white;
+}
+.side-conts ul li a:hover {
+  background-color: #111;
+}
+.dropdown{
+	padding:10px 5px;
+	width:100%;
+}
+#dropdown-conts{
+		display:none;
+		position:absolute;
+		background-color:white;
+		box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index:2;
+}
+.dropdown ul li a{
+	color:black;
+}
+.dropdown:hover{
+	background-color: #111;
+}
+.dropdown ul li a:hover{
+	background-color:orange;
+}
+.dropdown:hover #dropdown-conts{
+	display:block;
+}
+.side-conts{
+	position:absolute;
+	width:100%;
+	top:30%;
+	visibility:hidden;
+	color:white;
+}
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(GWAGANDA.png); /* Update the image URL */
+    background-color: red; /* This color will not be visible */
+    opacity: 0;
+    visibility: hidden;
+    top: 50%; /* Place the image in the middle vertically */
+    left: 50%; /* Place the image in the middle horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    padding-top: 20px;
+}
+.sidemenuClick{
+	visibility:visible;
+}
+
+* {box-sizing:border-box;margin:0px;}
+
+@media screen and (max-width: 800px) {
+	.logo{width:50px; height:50px;}
+	/*.nav{display:none;}*/
+}
+@media screen and (max-height:328px){
+	.sidenav{
+		position:relative;
+	}
+}
+
+.side-conts {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    color: white;
+    opacity: 0; /* Initially set opacity to 0 */
+    visibility: hidden; /* Initially hide the contents */
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s; /* Apply transitions */
+}
+
+.sidenav:hover .side-conts {
+    visibility: visible; /* Show the contents when hovering over the navbar */
+    opacity: 1; /* Fade in the contents when hovering over the navbar */
+    transition-delay: 0s; /* Delay the opacity transition */
+}
+
+.sidenav:hover .logo {
+    visibility: visible; /* Show the red box when hovering over the navbar */
+    opacity: 1; /* Fade in the red box when hovering over the navbar */
+    transition-delay: 0s; /* Delay the opacity transition */
+}
+
+
+.li1 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.li2 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.li3 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.li4 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.li5 {
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 16px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow with horizontal offset, vertical offset, blur radius, and color */
+}
+
+h1 {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+
+.Headers {
+    font-family: 'Sequel Sans Disp', Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.Headers {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    background: linear-gradient(to right,black 0%, white 10%, black 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.Headers::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    animation: shine 1.5s infinite linear;
+}
+
+
+
+
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.Headers {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    background: linear-gradient(to right,black 0%, white 10%, black 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.Headers::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+
+
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  /* basic article elements styling */
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #DCA6C0;
+  }
+  
+  article a:focus {
+    outline: 1px dotted #DCA6C0;
+  }
+  
+  article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+  }
+  
+  /* using the has() relational pseudo selector to update our custom properties */
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: #736B91;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
+  
+  /************************ 
+  Generic layout (demo looks)
+  **************************/
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 48px 0;
+    font-family: 'Sequel Sans Body', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    min-height: 100vh;
+  }
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    padding-top: 60px;
+    padding-left: 120px;
+    padding-bottom: 50px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    .article-body p {
+      display: none;
+    }
+  }
+  
+  @container card (min-width: 380px) {
+    .article-wrapper {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 16px;
+    }
+    .article-body {
+      padding-left: 0;
+    }
+    figure {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    figure img {
+      height: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+  
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
